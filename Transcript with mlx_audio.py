@@ -1,12 +1,14 @@
-#https://github.com/Blaizzy/mlx-audio
+#NLP of Nepal Audio files using mlx_audio and NLP models
+#Source: https://github.com/Blaizzy/mlx-audio
+#Change the audio file and directory
 
-#from mlx_audio.stt.generate import generate_transcription
+from mlx_audio.stt.generate import generate_transcription
 
-#result = generate_transcription(
-#    model="mlx-community/whisper-large-v3-turbo-asr-fp16",
-#    audio="/Users/shitalbhandary/Work/AU PhD HPE 2022/Interviews/1 Dr Paban Sharma/2_02-18_interview.mp3")
+result = generate_transcription(
+    model="mlx-community/whisper-large-v3-turbo-asr-fp16",
+    audio="/Users/shitalbhandary/Work/AU PhD HPE 2022/Interviews/1 Dr Paban Sharma/2_02-18_interview.mp3")
 
-#print(result.text)
+print(result.text)
 
 from mlx_audio.stt import load
 
